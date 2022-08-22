@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    My Blog
+{% endblock  %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post.css" %}" />
+    <link rel="stylesheet" href="{% static "blog/index.css" %}" />
+{% endblock %}
+
+{% block content %}
+   {% comment %} <header id="main-navigation">
+        <h1><a href="">HIRAL'S BLOG</a></h1>
+        <nav>
+            <a href="">all posts</a>
+        </nav>
+    </header>  {% endcomment %}
+
+    <section id="welcome">
+        <header>
+            <img src="{% static "blog/images/main.jpg" %}" alt="hiral-the author of the blog">
+            <h2>HIRAL tarpara'S BLOG</h2> 
+        </header>
+        <p>hi,i m hiral.and i love to blog about tech and solution</p>
+    </section>
+
+    <section id="latest-posts">
+        <h2>my latest thought</h2>
+        
+        <ul>
+            {% for post in posts %}
+                {% include "blog/includes/post.html" %}
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2> What i do!</h2>
+        <p>I love programming a laugh to help others
+            and I enjoy exploring new technologies in general!
+        </p>
+        <p> My goal is to keep on growing as a developer
+            and if I could help you do the same
+            I'd be very happy!
+        </p>
+    </section>
+{% endblock%}
