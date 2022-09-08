@@ -1,0 +1,34 @@
+{
+  "states": [
+    {
+      "name": "gujrat",
+      "code": "12",
+      "language": [
+        "205",
+        "206",
+        "207"
+      ],
+      "population": "15485"
+    },
+    {
+      "name": "mp",
+      "code": "15",
+      "language": [
+        "208",
+        "106",
+        "507"
+      ],
+      "population": "21343"
+    },
+    {
+      "name": "rajsthan",
+      "code": "47",
+      "language": [
+        "115",
+        "457",
+        "117"
+      ],
+      "population": "18415"
+    }
+  ]
+}
