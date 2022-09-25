@@ -13,15 +13,20 @@ import json
 # print(json_object)
 # print(type(json_object))
 
-with open('state.json')as f:
+with open('states2.json')as f:
   data=json.load(f)
 
-for state in data['states']:
-  print(state['language'])
+# for state in data['states']:
+#   print(state['language'])
   # del state['population']
 
 # with open('new_states.json','w')as f:
 #   json.dump(data, f,indent=2)
 
 with open('new_states2.json','w')as f:
-   json.dumps(data)
+   f.write(json.dumps(data))
+
+
+
+# with open('new_states2.json','w')as f:
+  #  json.dump(data,f)

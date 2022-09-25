@@ -8,10 +8,10 @@ with urlopen("https://skynet.mtailor.com/v1/config/preferences.json") as respons
 
 
 
-data = json.loads(source)
-# with open('jinfi.json','w')as f:
-    # json.dump(source,f,indent=2)
-print(json.dumps(data, indent=2))
+# data = json.loads(source)
+with open('jinfi.json','w')as f:
+    json.dump(source,f,indent=2)
+# print(json.dumps(data, indent=2))
 
 # print(len(data['list']['resources']))
 
